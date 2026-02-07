@@ -2,11 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cursor Test</title>
+  <title>Nyan Cat Cursor</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Nyan Cat Cursor 🐱🌈</h1>
-  <p>Move your mouse around this page.</p>
+  <h1>Move your mouse!</h1>
+  <p>Enjoy your Nyan Cat cursor 🐱🌈</p>
+
+  <!-- The animated cursor -->
+  <img id="cursor" src="nyan.gif" style="position:absolute; pointer-events:none; width:32px; height:32px;">
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.pageX + 'px';
+      cursor.style.top = e.pageY + 'px';
+    });
+  </script>
 </body>
 </html>
