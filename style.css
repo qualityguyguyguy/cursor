@@ -1,5 +1,8 @@
+/* CSS-only Nyan Cat cursor */
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
+  cursor: url("nyanCursor.png") 16 16, auto;
+}
+
+a:hover {
+  cursor: url("nyanCursor.png") 16 16, pointer;
 }
